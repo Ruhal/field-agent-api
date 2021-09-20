@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: learn.field_agent.data.SecurityClearanceJdbcTemplateRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in learn.field_agent.data.SecurityClearanceJdbcTemplateRepositoryTest

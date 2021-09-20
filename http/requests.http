@@ -1,0 +1,385 @@
+####################################
+
+GET /api/securityclearance HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+PUT /api/securityclearance/2 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "securityClearanceId": 2,
+    "name": "Secret updated3"
+}
+
+###
+POST /api/securityclearance HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "securityClearanceId": 0,
+    "name": "Long name "
+}
+
+###
+
+DELETE /api/securityclearance/2 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+
+###
+POST /api/agent HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{   
+    "agentId": 0,
+    "firstName": "Bob",
+    "middleName": "happy",
+    "lastName": 1,
+    "dob": "2000-08-20",
+    "heightInInches": 40
+}
+
+###
+POST /api/agent HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+
+
+###
+POST /api/alias HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "aliasId": 0,
+    "name": "Jimmy",
+    "persona": "not happy",
+    "agentId": 104
+}
+
+###
+
+
+
+GET /api/alias/agent/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+####
+PUT /api/alias/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "aliasId": 1,
+    "name": "Jimmy",
+    "persona": "not happy updated",
+    "agentId": 1
+}
+
+####
+DELETE /api/alias/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+POST /api/agent HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{   
+    "agentId": 0,
+    "firstName": "Bob",
+    "middleName": "happy",
+    "lastName": 1,
+    "dob": "2000-08-20",
+    "heightInInches": 1
+}
+
+###
+
+PUT /api/agent/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+  "agentId": 1,
+  "firstName": "Bob updated",
+  "middleName": "happy",
+  "lastName": "1",
+  "dob": "2000-08-20",
+  "heightInInches": 40,
+  "agencies": []
+}
+
+###
+GET /api/agent/110 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+
+#############
+
+DELETE /api/agent/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST /api/securityclearance HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{   
+    "securityClearanceId": 0,
+    "name": "Secret"
+}
+
+###
+POST /api/securityclearance HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{   
+    "securityClearanceId": 0,
+    "name": "New name"
+}
+
+###
+
+GET /api/securityclearance/5 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET /api/agency/5 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+
+###
+
+PUT /api/securityclearance/5 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "securityClearanceId": 5,
+    "name": "Secret 5 updated again 1"
+}
+
+###
+
+GET /api/securityclearance/20 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST /api/agent HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{   
+    "agentId": 0,
+    "firstName": "Bob",
+    "middleName": "happy",
+    "lastName": 1,
+    "dob": "2000-08-20",
+    "heightInInches": 40
+}
+
+###
+
+POST /api/alias HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "aliasId": 0,
+    "name": "Jimmy",
+    "persona": "not happy",
+    "agentId": 1
+}
+
+####
+
+PUT /api/alias/8 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "aliasId": 8,
+    "name": "Jimmy",
+    "persona": "not very happy",
+    "agentId": 1
+}
+
+###
+
+
+DELETE /api/alias/8 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "aliasId": 8,
+    "name": "Jimmy",
+    "persona": "not very happy",
+    "agentId": 1
+}
+
+###
+
+GET /api/alias/8 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+####
+
+GET /api/alias/agent/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+####
+
+DELETE /api/alias/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+
+PUT /api/securityclearance/10 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "securityClearanceId": 10,
+    "name": "Secret 5 updated again 1"
+}
+
+###
+
+###
+
+GET /api/securityclearance/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+
+###
+
+POST /api/agency HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "agencyId": 0,
+    "shortName": "MIA",
+    "longName": "Five"
+}
+
+###
+
+POST /api/mission HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "codeName": "operation 1",
+    "notes": "notes",
+    "startDate": "2021-03-20",
+    "projectedEndDate": "2021-04-20",
+    "actualEndDate": "",
+    "operationalCost": 10,
+    "agencyId": 1
+}
+
+###
+
+GET  /api/mission/9 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+
+PUT  /api/mission/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "missionId": 1,
+    "codeName": "operation 1 updated",
+    "notes": "notes",
+    "startDate": "2021-03-20",
+    "projectedEndDate": "2021-04-20",
+    "actualEndDate": "",
+    "operationalCost": 10,
+    "agencyId": 1
+}
+
+###
+
+DELETE  /api/mission/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST /api/securityclearance HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "securityClearanceId": 0,
+    "name": "new security c"
+}
+
+###
+
+DELETE  /api/securityclearance/4 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
