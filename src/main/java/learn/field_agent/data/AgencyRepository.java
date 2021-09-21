@@ -8,7 +8,6 @@ import java.util.List;
 public interface AgencyRepository {
     List<Agency> findAll();
 
-    //@Transactional
     Agency findById(int agencyId);
 
     Agency add(Agency agency);
